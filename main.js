@@ -1,6 +1,6 @@
 
     // URL da API Backend
-    const API_URL = "https://sua-api-backend.com/endpoint"; // Substitua pela URL real da sua API
+    const API_URL = "https://sua-api-backend.com/endpoint"; 
 
     // Captura elementos do formulário
     const embalagem = document.getElementById("embalagem");
