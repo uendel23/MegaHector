@@ -1,0 +1,229 @@
+@media screen and (min-width:768px){
+  .sugestao{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1rem;
+    margin-top: 2rem;
+}
+
+.sugestao-container {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+.sugestao-container h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+   color: #5a0909;
+}
+
+.sugestao-container p {
+  font-size: 10px;
+  color: #666;
+  margin: 0 0 15px;
+  color: #5a0909;
+}
+
+textarea {
+  width: 100%;
+  height: 70px;
+  padding: 10px;
+  font-size: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+textarea:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+button {
+  background-color:#5a0909;
+  color: #fff;
+  font-size: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #5a0909;
+}
+
+.rodape {
+  margin-top: 4rem;
+  background: #000000;
+}
+
+.lista__rodape {
+  list-style: none;  
+  display: flex;     
+  justify-content: center; 
+  gap: 20px;
+  padding: 0;
+  flex-wrap: wrap;
+
+}
+
+.lista-rodape {
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: white;          /* Define a cor do texto como branco */
+  display: flex;
+  align-items: center;   /* Alinha a imagem e o texto no centro */              /* Espaçamento entre a imagem e o texto */
+}
+
+.lista__rodape-link{
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: white;          /* Define a cor do texto como branco */
+  display: flex;
+  align-items: center; 
+  margin-bottom: 1rem;
+  list-style: none;  /* Remove os marcadores de lista */
+  display: flex;     /* Flexbox para organizar os itens em linha */
+  justify-content: center; /* Alinha os itens no centro */
+  gap: 20px;         /* Espaçamento entre os itens */
+  padding: 0;
+}
+
+.logo_insta{
+  width: 2rem;
+  margin-left: 3rem;
+  margin-top: 1rem;
+  
+}
+
+.logo-git{
+  width: 2rem;
+  margin-left: 2.7rem;
+  margin-top: 1rem;
+ 
+}
+
+.logo_linkedin{
+  width: 2rem;
+  margin-left: 2.7rem;
+  margin-top: 1rem;
+  
+}
+
+
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .sugestao{
+        display: flex;
+        justify-content: center;
+        padding: 2rem 2rem;
+        margin-top: 2rem;
+    }
+
+    .sugestao-container {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 100%;
+        max-width: 400px;
+        box-sizing: border-box;
+    }
+  
+      .sugestao-container h2 {
+        margin: 0 0 10px;
+        font-size: 30px;
+         color: #5a0909;
+      }
+  
+      .sugestao-container p {
+        font-size: 20px;
+        color: #666;
+        margin: 0 0 15px;
+        color: #5a0909;
+      }
+  
+      textarea {
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        resize: none;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+      }
+  
+      textarea:focus {
+        border-color: #007BFF;
+        outline: none;
+      }
+  
+      button {
+        background-color:#5a0909;
+        color: #fff;
+        font-size: 16px;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+}
+  
+     button:hover {
+    background-color: #5a0909;
+}
+
+
+
+
+    .rodape {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    background: #000000;
+}
+
+
+.lista__rodape-titulo {
+    text-transform: none;
+    font-size: 20px;
+    padding:  0 2rem;
+    color: #d8d0d0;
+    margin-bottom: 2rem;
+
+}
+
+.logo_insta{
+    width: 3.5rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    
+}
+
+.logo-git{
+    width: 3.5rem;
+    margin-left: 2.7rem;
+    margin-top: 1rem;
+   
+}
+
+.logo_linkedin{
+    width: 3.5rem;
+    margin-left: 2.7rem;
+    margin-top: 1rem;
+    
+}
+
+}

@@ -1,0 +1,80 @@
+
+
+@media screen and (min-width:768px){
+
+    .logo{
+    
+        width: 100%;
+        height: 200px;
+        background-color: #872020;
+        display: flex;   
+       
+    }
+
+    .img_logo{   
+        width: 50px; 
+        height: 50px; 
+        margin-left: 30px;   
+        margin-top: 27px;
+    }
+
+    .name_logo{
+
+        font-size: 20px;
+        margin-top: 50px;
+        margin-left: 4px;
+        color:white;
+    }
+
+    .calculator{
+        color: #FFFF;  
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 40px;
+        margin-top: auto;
+        margin-bottom: 5%;
+        margin-left: 7rem;
+        font-weight: bold;   
+    
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .logo{
+    
+        width: 100%;
+        height: 400px;
+        background-color: #872020;
+        display: flex;   
+       
+    }
+    
+    .img_logo{   
+            width: 80px; 
+            height: 80px; 
+            margin-left: 150px;   
+            margin-top: 27px;
+    
+    }
+    
+    .name_logo{
+    
+        font-size: 35px;
+        margin-top: 55px;
+        margin-left: 15px;
+        color:white;
+    }
+    
+    .calculator{
+        color: #FFFF;  
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 80px;
+        margin-top: auto;
+        margin-bottom: 5%;
+        margin-left: 40rem;
+        font-weight: bold;   
+    
+    }
+    
+    }
+    
