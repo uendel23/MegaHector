@@ -18,7 +18,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class CalculatorController {
 
     @Autowired
-    CalculatorService calculator;
+    CalculatorService calculator = new CalculatorService();
+
 
     @PostMapping("/calculo")
     public ResponseEntity<RespostaDto> dados(@RequestBody DadosDto dto) {

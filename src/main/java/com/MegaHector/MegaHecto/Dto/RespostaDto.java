@@ -5,14 +5,14 @@ import org.springframework.stereotype.Component;
 @Component
 public class RespostaDto {
 
-    private Double quantidade;
+    private Double resultado;
 
 
-    public Double getQuantidade() {
-        return quantidade;
+    public Double getResultado() {
+        return resultado;
     }
 
-    public void setQuantidade(Double quantidade) {
-        this.quantidade = quantidade;
+    public void setResultado(Double resultado) {
+        this.resultado = resultado;
     }
 }

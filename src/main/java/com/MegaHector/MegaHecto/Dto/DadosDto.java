@@ -4,9 +4,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class DadosDto {
 
-    private String embalagem;
-    private Double hectorlitro;
-    private Double quantEmbalagem;
+    private String embalagem ="0";
+    private Double hectorlitro =0d;
+    private Double quantEmbalagem=0d;
 
     public DadosDto(String embalagem, Double hectorlitro, Double quantEmbalagem) {
         this.embalagem = embalagem;

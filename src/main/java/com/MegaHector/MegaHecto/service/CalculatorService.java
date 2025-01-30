@@ -10,26 +10,31 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class CalculatorService {
+
+
     @Autowired
-    Dados elements;
+    Dados dados;
     @Autowired
     RespostaDto resposta;
     @Autowired
 
 
-    public RespostaDto receberDados(DadosDto dto) {
-        //set os atributos de elementsDto em emlements
+    public RespostaDto receberDados(@NotNull DadosDto dto) {
+        //recebe a string das embalagem e retira as letras
         String format = dto.getEmbalagem().replaceAll("\\D+", "");
-        elements.setEmbalegem(Double.parseDouble(format));
-        elements.setHectorlitro(dto.getHectorlitro());
-        elements.setQuantEmbalagem(dto.getQuantEmbalagem());
+
+        //set os atributos de elementsDto em emlements
+        dados.setEmbalegem(Double.parseDouble(format));
+        dados.setHectorlitro(dto.getHectorlitro());
+        dados.setQuantEmbalagem(dto.getQuantEmbalagem());
 
         //calcula a quantodade de embalagem de acordo com os hectorlitros
-        elements.setMlEmbalagem(elements.getEmbalegem() * elements.getQuantEmbalagem());
-        elements.setQuantidade((double) ((elements.getHl() * elements.getHectorlitro()) / elements.getMlEmbalagem()));
+        dados.setMlEmbalagem(dados.getEmbalegem() * dados.getQuantEmbalagem());
+        dados.setQuantidade((dados.getHl() * dados.getHectorlitro()) / dados.getMlEmbalagem());
 
         //set  quantidade de embalagem
-        resposta.setQuantidade(Math.ceil(elements.getQuantidade()));
+        resposta.setResultado(Math.ceil(dados.getQuantidade()));
+
 
         return resposta;
     }
