@@ -1,4 +1,4 @@
-package com.MegaHector.MegaHecto;
+package com.megahecto;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

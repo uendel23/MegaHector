@@ -1,4 +1,4 @@
-package com.MegaHector.MegaHecto.Dto;
+package com.megahecto.dto;
 
 import org.springframework.stereotype.Component;
 
