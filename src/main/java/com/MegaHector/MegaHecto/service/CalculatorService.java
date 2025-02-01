@@ -3,37 +3,24 @@ package com.MegaHector.MegaHecto.service;
 
 import com.MegaHector.MegaHecto.Dto.DadosDto;
 import com.MegaHector.MegaHecto.Dto.RespostaDto;
-import com.MegaHector.MegaHecto.entity.Dados;
-import org.jetbrains.annotations.NotNull;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class CalculatorService {
 
 
-    @Autowired
-    Dados dados;
-    @Autowired
-    RespostaDto resposta;
-    @Autowired
 
-
-    public RespostaDto receberDados(@NotNull DadosDto dto) {
+    public RespostaDto receberDados(DadosDto dto) {
         //recebe a string das embalagem e retira as letras
-        String format = dto.getEmbalagem().replaceAll("\\D+", "");
 
-        //set os atributos de elementsDto em emlements
-        dados.setEmbalegem(Double.parseDouble(format));
-        dados.setHectorlitro(dto.getHectorlitro());
-        dados.setQuantEmbalagem(dto.getQuantEmbalagem());
+       // String format = dto.getEmbalagem().replaceAll("\\D+", "");
+        Double embalagem = Double.parseDouble(null);
+        Double mlEmbalagem = embalagem * dto.getQuantEmbalagem();
+        Double quantidade = (100000 * dto.getHectorlitro()) / mlEmbalagem;
 
-        //calcula a quantodade de embalagem de acordo com os hectorlitros
-        dados.setMlEmbalagem(dados.getEmbalegem() * dados.getQuantEmbalagem());
-        dados.setQuantidade((dados.getHl() * dados.getHectorlitro()) / dados.getMlEmbalagem());
-
+        RespostaDto resposta = new RespostaDto();
         //set  quantidade de embalagem
-        resposta.setResultado(Math.ceil(dados.getQuantidade()));
+        resposta.setResultado(Math.ceil(quantidade));
 
 
         return resposta;

@@ -8,12 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/form.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/text.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/text.css">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/main.js">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
@@ -27,15 +26,15 @@
     <div class="texto">
         <p class="p">
           O hectolitro, cujo símbolo é hL, consiste numa unidade de
-          Grandeza física, <a href="https://pt.wikipedia.org/wiki/Volume" target="_blank">volume</a> é um múltiplo do litro. No sistema
+          grandeza física. O <a href="https://pt.wikipedia.org/wiki/Volume" target="_blank">volume</a> é um múltiplo do litro. No sistema
           Internacional de unidades (SI), o volume vem expresso em 
           metros cúbicos, sendo necessário converter hectolitros
           em metros cúbicos, isto é, 1 hl = 100 l e 1 l = 0,001 m³, ou seja, 1 hl = 0,1 m³.
           <br><br>
           A Mega Hecto é uma calculadora de hectolitros que converte de 
-          volume de hectolitros para (n) quantidade de embalagens, muito usadas na indústria de bebidas. Aqui você pode. 
-          Escolher a embalagem da bebida, seja ela 350ml, 600ml, etc.
-          E o volume em hectolitros e obterá o resultado da quantidade de embalagem.    
+          volume de hectolitros para (n) quantidade de embalagens, muito usadas na indústria de bebidas. Aqui você pode 
+          escolher a embalagem da bebida, seja ela 350ml, 600ml, etc, a quantidade de unidades por embalagem
+          e o volume em hectolitros e obterá o resultado da quantidade de embalagem.    
         </p>
     </div>
 
@@ -90,11 +89,11 @@
 
   <footer class="rodape">
     <ul>
-      <a href="https://www.instagram.com/uendel_nascimento/" target="_blank"> <li class="lista__rodape" > <img src="/img/Instagram (1).png" alt="Instagram" class="logo_insta"> Instagram </li></a>
+      <a href="https://www.instagram.com/uendel_nascimento/" target="_blank"> <li class="lista__rodape" > <img src="img/Instagram%20(1).png" alt="Instagram" class="logo_insta"> Instagram </li></a>
 
-      <a href="https://github.com/uendel23" target="_blank"><li class="lista__rodape"><img src="/img/GitHub (1).png" alt="GitHub" class="logo-git">GitHub</li></a>
+      <a href="https://github.com/uendel23" target="_blank"><li class="lista__rodape"><img src="img/GitHub%20(1).png" alt="GitHub" class="logo-git">GitHub</li></a>
 
-      <a href="https://www.linkedin.com/in/uendel-nascimento-155a59170/" target="_blank"><li class="lista__rodape"><img src="/img/LinkedIn.png" alt="LinkedIn" class="logo_linkedin">Linkedin</li></a>
+      <a href="https://www.linkedin.com/in/uendel-nascimento-155a59170/" target="_blank"><li class="lista__rodape"><img src="img/LinkedIn.png" alt="LinkedIn" class="logo_linkedin">Linkedin</li></a>
     </ul>
   </footer>
 
@@ -104,12 +103,6 @@
     const quantidadeEmbalagem = document.getElementById("quantembalagem").value;
     const hectolitros = document.getElementById("quantidade").value;
 
-  
-   //   if (isNaN(quantidadeEmbalagem) || isNaN(embalagem)) {
-     //   alert("Por favor, insira valores numéricos válidos!");
-       // return;
-    //}
-    
     if (!quantidadeEmbalagem || !hectolitros) {
         alert("Preencha todos os campos antes de calcular.");
         return;
