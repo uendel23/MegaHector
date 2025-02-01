@@ -29,4 +29,5 @@ public class DadosDto {
     public void setQuantEmbalagem(Integer quantEmbalagem) {
         this.quantEmbalagem = quantEmbalagem;
     }
+
 }
