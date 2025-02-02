@@ -1,5 +1,8 @@
 package com.megahecto.dto;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class DadosDto {
 
     private String embalagem ;
