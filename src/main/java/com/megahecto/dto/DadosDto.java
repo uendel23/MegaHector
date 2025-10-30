@@ -6,31 +6,30 @@ import org.springframework.stereotype.Component;
 public class DadosDto {
 
     private String embalagem ;
-    private Double hectorlitro;
-    private Integer quantEmbalagem;
+    private Double hectolitros;
+    private Integer unidades;
 
     public String getEmbalagem() {
-         return embalagem;
+        return embalagem;
     }
 
     public void setEmbalagem(String embalagem) {
         this.embalagem = embalagem;
     }
 
-    public Double getHectorlitro() {
-        return hectorlitro;
+    public Double getHectolitros() {
+        return hectolitros;
     }
 
-    public void setHectorlitro(Double hectorlitro) {
-        this.hectorlitro = hectorlitro;
+    public void setHectolitros(Double hectolitros) {
+        this.hectolitros = hectolitros;
     }
 
-    public Integer getQuantEmbalagem() {
-        return quantEmbalagem;
+    public Integer getUnidades() {
+        return unidades;
     }
 
-    public void setQuantEmbalagem(Integer quantEmbalagem) {
-        this.quantEmbalagem = quantEmbalagem;
+    public void setUnidades(Integer unidades) {
+        this.unidades = unidades;
     }
-
 }
