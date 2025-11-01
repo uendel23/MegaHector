@@ -12,7 +12,7 @@ public class corsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("https://megahectorfront.vercel.app") // origem do Angular
+                        .allowedOrigins("https://megahectorfrontend-85bc.vercel.app/") // origem do Angular
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*");
             }
